@@ -4,7 +4,7 @@ let App = ()=>{
   return(
     <C.Container>
       <C.Area>
-        
+        <C.Header>iNotes</C.Header>
       </C.Area>
     </C.Container>
   );
