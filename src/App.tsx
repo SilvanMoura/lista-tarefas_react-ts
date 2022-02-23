@@ -2,7 +2,9 @@ import * as C from './App.styles';
 
 let App = ()=>{
   return(
-    <div>...</div>
+    <C.Container>
+      
+    </C.Container>
   );
 }
 
