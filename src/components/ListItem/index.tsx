@@ -1,6 +1,11 @@
-import * as C from './styles';
+import * as C from './style';
+import {Item} from '../../types/Item';
 
-export let ListItem = ()=>{
+type Props ={
+    item: Item;
+}
+
+export let ListItem = ({item}:Props)=>{
     return(
         <C.Container>
             ...
