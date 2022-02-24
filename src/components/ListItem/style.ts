@@ -1,20 +1,28 @@
 import styled from 'styled-components';
 
-export let Container = styled.div`
-    display: flex;
-    background-color: #20212C;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    align-items: center;
+type PropsContainer = {
+    done: boolean;
+}
 
-    input{
-        width: 25px;
-        height: 25px;
-        margin-right: 5px;
-    }
+export let Container = styled.div(({done}: PropsContainer)=>(
+    `
+        display: flex;
+        background-color: #20212C;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        align-items: center;
 
-    label{
-        color: #CCC;
-    }
-`;
+        input{
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+
+        label{
+            color: #CCC;
+            background-color: ${done ? '#0F0':'#20212C'};
+            text-decoration: ${done ? 'line-through' : 'initial'}
+        }
+    `
+));
