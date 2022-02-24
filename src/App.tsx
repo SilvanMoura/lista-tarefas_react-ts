@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import * as C from './App.styles';
+import {Item} from './types/Item'
 
 let App = ()=>{
-  let [list, setList] = useState([]);
+  let [list, setList] = useState<Item[]>([]);
 
   return(
     <C.Container>
