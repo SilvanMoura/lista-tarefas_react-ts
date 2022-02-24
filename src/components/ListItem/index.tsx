@@ -1,5 +1,9 @@
+import * as C from './styles';
+
 export let ListItem = ()=>{
     return(
-        <div>...</div>
+        <C.Container>
+            ...
+        </C.Container>
     );
 };
