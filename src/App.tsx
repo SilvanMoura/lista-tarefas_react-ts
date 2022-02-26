@@ -2,6 +2,7 @@ import {useState} from 'react';
 import * as C from './App.styles';
 import {Item} from './types/Item';
 import {ListItem} from './components/ListItem/index';
+import {AddArea} from './components/AddArea/index';
 
 let App = ()=>{
   let [list, setList] = useState<Item[]>([
@@ -14,9 +15,11 @@ let App = ()=>{
       <C.Area>
         <C.Header>iNotes</C.Header>
 
-        {list.map( (item, index)=>{
+        <AddArea />
+
+        {list.map( (item, index)=>(
           <ListItem key={index} item={item}/>
-        } )}
+        ) )}
         
       </C.Area>
     </C.Container>
