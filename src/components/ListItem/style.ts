@@ -21,7 +21,7 @@ export let Container = styled.div(({done}: PropsContainer)=>(
         }
 
         label{
-            color: ${done ? '#000':'#CCC'}
+            color: ${done ? '#287233':'#CCC'}
         }
     `
 ));
